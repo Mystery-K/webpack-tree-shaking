@@ -13,21 +13,21 @@ module.exports = {
     filename: "[name].bundle.js"
   },
 
-  module: {
-    rules: [
-      // {
-      //   test: /\.js$/,
-      //   loader: "babel-loader",
-      //   options: {
-      //     babelrc: false,
-      //     presets: [["es2015", { modules: false, loose: true }], "react"]
-      //   }
-      // }
-    ]
-  },
-
   // plugins: [new BabiliPlugin()],
-  // plugins: [new UglifyJSPlugin()],
+  plugins: [new UglifyJSPlugin()],
+
+  module: {
+    // rules: [
+    //   {
+    //     test: /\.js$/,
+    //     loader: "babel-loader",
+    //     options: {
+    //       babelrc: false,
+    //       presets: [["es2015", { modules: false, loose: true }], "react"]
+    //     }
+    //   }
+    // ]
+  },
 
   resolve: {
     modules: [path.join(process.cwd(), "app"), "node_modules"],

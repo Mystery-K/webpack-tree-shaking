@@ -1,10 +1,11 @@
 {
-  "name": "@mfelibs/webpack-tree-shaking",
-  "version": "1.0.6",
+  "name": "webpack-tree-shaking",
+  "version": "1.1.0",
   "description": "webpack-tree-shaking demo",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack --config webpack.config.js"
+    "webpack": "webpack --config webpack.config.js",
+    "webpack-es5": "webpack --config webpack.es5.config.js"
   },
   "repository": {
     "type": "git",
@@ -19,15 +20,15 @@
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.9",
+    "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.24.1",
-    "babili": "^0.0.10",
-    "babili-webpack-plugin": "^0.0.9",
+    "babili": "^0.1.4",
+    "babili-webpack-plugin": "^0.1.2",
     "http-server": "^0.9.0",
     "uglifyjs-webpack-plugin": "^1.1.6",
-    "webpack": "^2.2.1"
+    "webpack": "^3.10.0"
   },
   "author": "kongwei",
   "license": "ISC"
