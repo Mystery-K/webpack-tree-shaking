@@ -169,4 +169,4 @@
 
 #### 2.引入支持 tree-shaking 的压缩插件，如 BabiliPlugin 或 UglifyJSPlugin
 
-#### 3.如果在非 es6 环境中，使用 function 定义组织模块，或者先将 es6 代码执行 tree-shaking，再转换
+#### 3.如果需要在非 es6 环境中运行，使用 function 定义组织模块，或者先将 es6 代码执行 tree-shaking，再转换为es5
