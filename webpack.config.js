@@ -1,30 +1,37 @@
-'use strict';
-let path = require('path');
+"use strict";
+const path = require("path");
+const BabiliPlugin = require("babili-webpack-plugin");
+const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: {
-    'test': './src/test.js'
+    index: "./src/index.js"
   },
 
   output: {
-    path: './dist',
-    filename: '[name].bundle.js'
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].bundle.js"
   },
 
   module: {
-    rules: []
+    rules: [
+      // {
+      //   test: /\.js$/,
+      //   loader: "babel-loader",
+      //   options: {
+      //     babelrc: false,
+      //     presets: [["es2015", { modules: false, loose: true }], "react"]
+      //   }
+      // }
+    ]
   },
 
-  plugins: [
-
-  ],
+  // plugins: [new BabiliPlugin()],
+  // plugins: [new UglifyJSPlugin()],
 
   resolve: {
-    modules: [
-      path.join(process.cwd(), 'app'),
-      'node_modules'
-    ],
-    extensions: ['.js', '.json']
+    modules: [path.join(process.cwd(), "app"), "node_modules"],
+    extensions: [".js", ".json"]
   },
 
   devtool: false
