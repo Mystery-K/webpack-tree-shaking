@@ -1,6 +1,6 @@
 # webpack tree-shaking
 
-### 这是一个测试 webpack2 tree-shaking 特性的 demo
+### 这是一个测试 webpack tree-shaking 特性的 demo
 
 首先，tree-shaking 依赖于 ES2015 的模块语法*import*和*export*，打包时检测未使用到的模块(unused harmony modules)，然后将其 shake 掉。
 
