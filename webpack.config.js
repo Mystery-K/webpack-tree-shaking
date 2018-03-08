@@ -17,16 +17,16 @@ module.exports = {
   plugins: [new UglifyJSPlugin()],
 
   module: {
-    // rules: [
-    //   {
-    //     test: /\.js$/,
-    //     loader: "babel-loader",
-    //     options: {
-    //       babelrc: false,
-    //       presets: [["es2015", { modules: false, loose: true }], "react"]
-    //     }
-    //   }
-    // ]
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+        options: {
+          babelrc: false,
+          presets: [["es2015", { modules: false, loose: true }], "react"]
+        }
+      }
+    ]
   },
 
   resolve: {
